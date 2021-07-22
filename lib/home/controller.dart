@@ -41,7 +41,7 @@ class HomeController extends GetxController {
     super.onReady();
     // async 拉取数据
     Future.delayed(Duration(seconds: 5)).then((_) {
-      state.title = "hello2";
+      state.title = "welcome";
     });
   }
 

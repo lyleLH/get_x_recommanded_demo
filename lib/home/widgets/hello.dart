@@ -16,6 +16,7 @@ class HelloWidget extends GetView<HomeController> {
               height: 200,
             ),
             Obx(() => Text(controller.state.title)),
+            Obx(() => Text(controller.state.model.value.name)),
             ElevatedButton(
                 onPressed: () {
                   Get.to(RepoListPage());

@@ -1,3 +1,4 @@
+import 'package:flutter_getx_app2/models/home_model.dart';
 import 'package:get/get.dart';
 
 class HomeState {
@@ -5,4 +6,5 @@ class HomeState {
   final _title = "".obs;
   set title(value) => this._title.value = value;
   get title => this._title.value;
+  final model = HomeModel(id: 1, name: "home").obs;
 }
